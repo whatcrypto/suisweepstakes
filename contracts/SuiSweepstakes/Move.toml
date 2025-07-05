@@ -1,0 +1,14 @@
+[package]
+name = "SuiSweepstakes"
+version = "0.0.1"
+published-at = "0x996e6d8186c44ebca2602b54bc7175cc538cf8164d78c5074ff26d06ddebf653"
+
+[addresses]
+# Framework address (built-ins like coin, tx_context, etc.)
+sui = "0x2"
+# Our contract address – replace when deploying under a different account
+suisweepstakes = "0x996e6d8186c44ebca2602b54bc7175cc538cf8164d78c5074ff26d06ddebf653"
+
+[dependencies]
+# Pull the official Sui framework so we can use Coin, TxContext, etc.
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework", rev = "main" }
